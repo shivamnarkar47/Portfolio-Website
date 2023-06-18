@@ -52,9 +52,9 @@ const { title } = Astro.props;
       crossorigin="anonymous"></script>
     <script>
       $(window).on("load", function () {
-        setTimeout(() => {
+        // setTimeout(() => {
           $(".loader").fadeOut("slow");
-        }, 4000);
+        // }, 4000);
       });
     </script>
     <style>
@@ -83,9 +83,7 @@ span{
     opacity:0;
   }
 }
-body{
-  overflow:hidden;
-}
+
 
     </style>
   </body>
