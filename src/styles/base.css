@@ -12,3 +12,26 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+
+@layer components {
+  .card {
+    padding-top: -30px;
+    background: linear-gradient(
+      139.69deg,
+      #ffffff 2.24%,
+      #b5c5ff 53.85%,
+      #ffef64 97.22%
+    );
+    border: 1px solid #000000;
+  }
+  .dark-card {
+    background: linear-gradient(
+      139.69deg,
+      #000000 2.24%,
+      #022192 59.95%,
+      #82008d 97.22%
+    );
+    border: 1px solid #ececec;
+    border-radius: 47px;
+  }
+}

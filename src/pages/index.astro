@@ -4,26 +4,25 @@ import MySiteLayout from "../layouts/MySiteLayout.astro";
 
 <MySiteLayout>
   <div
-    class="w-full pb-10 items-center flex flex-col lg:flex-row container-full"
+    class="w-full pb-10 items-center flex flex-col lg:flex-row container-full dark:bg-slate-950"
   >
     <div
-      class="w-3/4 border rounded-2xl p-10 m-3 h-full justify-center flex flex-col"
-      style="padding-top:-30px;background: linear-gradient(139.69deg, #FFFFFF 2.24%, #B5C5FF 53.85%, #FFEF64 97.22%);border: 1px solid #000000;"
+      class="w-3/4 border rounded-2xl p-10 m-3 h-full justify-center flex flex-col card dark:dark-card dark:text-white"
     >
       <h1
-        class="text-3xl lg:text-8xl mt-auto font-extrabold"
-        style="line-height: 130%;letter-spacing: -2px;"
+        class="text-3xl lg:text-8xl mt-auto font-bold dark:text-white"
+        style="line-height: 130%;letter-spacing: -3px;"
       >
-        Hey ! I'm <br />Shivam Narkar
+        Hey ! I'm <br />Shivam Narkar.
       </h1>
       <p class="text-xl lg:text-4xl text-black-500 mt-6">
         A Web Development Freshman
       </p>
-      <a href="mailto:shivamnarkar16@gmail.com" class="w-48">
+      <a href="mailto:shivamnarkar16@gmail.com" class="w-48 ease-in duration-100">
         <button
-          class="border w-48 lg:w-64 bg-black text-white rounded-xl p-4 px-5 my-5 font-semibold text-l lg:text-2xl"
+          class=" hover:bg-white hover:text-black duration-200 w-48 lg:w-64 bg-black text-white rounded-xl p-4 px-5 my-5 font-semibold text-l lg:text-2xl"
         >
-          Contact me <i class="fa-solid fa-arrow-right px-4"></i></button
+          Shortlist me <i class="fa-solid fa-arrow-right px-4"></i></button
         >
       </a>
       <div class="mt-auto">
@@ -67,4 +66,3 @@ import MySiteLayout from "../layouts/MySiteLayout.astro";
     }
   }
 </style>
-
