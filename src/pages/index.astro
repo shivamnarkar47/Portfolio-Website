@@ -10,7 +10,7 @@ import MySiteLayout from "../layouts/MySiteLayout.astro";
       class="w-3/4 border rounded-2xl p-10 m-3 h-full justify-center flex flex-col card dark:dark-card dark:text-white"
     >
       <h1
-        class="text-3xl lg:text-8xl mt-auto font-bold dark:text-white"
+        class="text-3xl lg:text-8xl mt-auto font-extrabold dark:text-white"
         style="line-height: 130%;letter-spacing: -3px;"
       >
         Hey ! I'm <br />Shivam Narkar.
@@ -37,7 +37,7 @@ import MySiteLayout from "../layouts/MySiteLayout.astro";
       </div>
     </div>
     <div
-      class="w-11/12 lg:w-1/3 px-10 mx-5 flex items-center image justify-center rounded-2xl border"
+      class="w-11/12 lg:w-1/3 px-10 mx-5 flex items-center image justify-center rounded-2xl border dark:border-white"
     >
     </div>
   </div>
@@ -49,10 +49,9 @@ import MySiteLayout from "../layouts/MySiteLayout.astro";
     background-image: url("/assets/img.jpg");
     background-size: cover;
     background-position: 0 0;
-    border: 1px solid #000000;
   }
   .container-full {
-    height: calc(100vh - 11vh);
+    height: calc(100vh - 16vh);
     transition: all 500ms;
   }
   @media screen and (max-width: 1024px) {

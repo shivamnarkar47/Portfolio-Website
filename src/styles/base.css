@@ -34,4 +34,32 @@ h6 {
     border: 1px solid #ececec;
     border-radius: 47px;
   }
+  .heading{
+    letter-spacing: -2px;
+  }
+  .aboutimage{
+    @apply m-7 md:w-1/2 place-items-center  rounded-lg backdrop-blur-sm shadow-sm shadow-white border-white border-2;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(3, 7, 18);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 20px;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
