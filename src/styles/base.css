@@ -40,6 +40,9 @@ h6 {
   .aboutimage{
     @apply m-7 md:w-1/2 place-items-center  rounded-lg backdrop-blur-sm shadow-sm shadow-white border-white border-2;
   }
+  .hovera:hover{
+    @apply border-b-2 border-white transition
+  }
 }
 
 ::-webkit-scrollbar {
