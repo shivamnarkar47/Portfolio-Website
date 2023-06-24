@@ -1,63 +1,30 @@
 ---
 export interface Props {
-	title: string;
-	body: string;
-	href: string;
+  title: string;
+  body: string;
+  href: string;
+  src: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, src } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
-<style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 0.25rem;
-		background-color: white;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 0.6rem;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-	}
+<a href={href}target='_blank'>
+  <div
+    class="md:w-80 w-full bg-white dark:bg-black shadow rounded border border-transparent hover:border-blue-500 cursor-pointer md:m-4 mx-auto my-4"
+  >
+    <div
+      class="h-72 w-full bg-gray-200 lex flex-col justify-between p-4 rounded"
+      style=`background:url(${src});background-size:cover;background-position:center;`
+    >
+    </div>
 
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: 1rem 1.3rem;
-		border-radius: 0.35rem;
-		color: #111;
-		background-color: white;
-		opacity: 0.8;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-		color: #444;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent));
-	}
-</style>
+    <div class="p-4">
+      <div class="flex items-center justify-between">
+        <h1 class="text-gray-600 dark:text-white font-medium">{title}</h1>
+        <i class="fa-solid fa-arrow-right text-white"></i>
+      </div>
+      <p class="text-gray-400 text-sm my-1">{body}</p>
+    </div>
+  </div>
+</a>
